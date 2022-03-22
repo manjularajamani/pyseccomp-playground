@@ -10,7 +10,7 @@ This repository will hold python scripts that have been seccomp'd via the libsec
              
 # Installing the libseccomp Library
 
-`Step 1:` Clone the [libseccomp](https://github.com/seccomp/libseccomp) repository
+`Step 1:` Grab the latest release from the release page at [libseccomp](https://github.com/seccomp/libseccomp/releases/) repository
 
 `Step 2:` If you are building the libseccomp library from an official release tarball, you  should follow the familiar three step process used by most autotools based applications:
 
