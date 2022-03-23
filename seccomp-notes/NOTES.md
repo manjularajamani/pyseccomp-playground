@@ -23,63 +23,49 @@ The libseccomp library provides an easy to use, platform independent, interface 
 
 # References
 
-`[0]` https://docs.python.org/3/library/subprocess.html
+* https://docs.python.org/3/library/subprocess.html
+* https://github.com/seccomp/libseccomp/blob/main/src/python/seccomp.pyx#L339
+* https://spinscale.de/posts/2020-10-27-seccomp-making-applications-more-secure.html
+* https://stackoverflow.com/questions/21009416/python-subprocess-security
+* https://docs.python.org/3/library/
+* https://filippo.io/linux-syscall-table/
 
-`[1]`https://github.com/seccomp/libseccomp/blob/main/src/python/seccomp.pyx#L24
+* https://linuxhint.com/list_of_linux_syscalls/
 
-`[2]`https://github.com/seccomp/libseccomp/blob/main/src/python/seccomp.pyx#L339
+* https://rhodesmill.org/brandon/slides/2014-07-pyohio/strace/
 
-`[3]` https://spinscale.de/posts/2020-10-27-seccomp-making-applications-more-secure.html
+* https://libseccomp.readthedocs.io/en/latest/
 
-`[4]` https://stackoverflow.com/questions/21009416/python-subprocess-security
+* https://scribe.rip/linux-security-understand-and-practice-seccomp-syscall-filter-37004bc4b53d
 
-`[5]` https://docs.python.org/3/library/subprocess.html#security-considerations
+* https://noti.st/spinscale/NPWbNV#spsFKWs
 
-`[6]` https://docs.python.org/3/library/
+* https://github.com/antitree/syscall2seccomp/blob/master/syscall2seccomp.py
 
-`[7]` https://stackoverflow.com/a/32199696
+* https://www.antitree.com/2017/09/tool-syscall2seccomp/
 
-`[8]` https://filippo.io/linux-syscall-table/
+* https://docs.aws.amazon.com/AmazonECS/latest/bestpracticesguidesecurity-runtime.html
 
-`[9]` https://linuxhint.com/list_of_linux_syscalls/
+* https://www.youtube.com/watch?v=6lRHK_LLUGI
 
-`[10]` https://rhodesmill.org/brandon/slides/2014-07-pyohio/strace/
+* https://blog.heroku.com/applying-seccomp-filters-on-go-binaries
 
-`[11]` https://libseccomp.readthedocs.io/en/latest/
+* https://packages.ubuntu.com/focal/libseccomp-dev
 
-`[12]` https://scribe.rip/linux-security-understand-and-practice-seccomp-syscall-filter-37004bc4b53d
+* https://archive.fosdem.org/2020/schedule/event/debugging_strace_modern/attachments/slides/4109/export/events/attachments/debugging_strace_modern/slides/4109/fosdem_2020_slides_postmodern_strace.pdf
 
-`[13]`https://twitter.com/_JohnHammond/status/1265258932269957121/photo/1
+* https://arxiv.org/pdf/2012.02554.pdf
 
-`[14]` https://noti.st/spinscale/NPWbNV#spsFKWs
+* https://github.com/IAIK/Chestnut
 
-`[15]`https://github.com/antitree/syscall2seccomp/blob/master/syscall2seccomp.py
+* https://gist.github.com/chrisdlangton/f94fd36028a0ba46b73e6629524d5710
 
-`[16]` https://www.antitree.com/2017/09/tool-syscall2seccomp/
+* https://firejail.wordpress.com/documentation-2/seccomp-guide/
 
-`[17]`https://docs.aws.amazon.com/AmazonECS/latest/bestpracticesguide/security-runtime.html
+* https://adil.medium.com/allow-disallow-syscalls-via-seccomp-d5fc8816d34e
 
-`[18]` https://www.youtube.com/watch?v=6lRHK_LLUGI
+* https://www.brendangregg.com/blog/2014-05-11/strace-wow-much-syscall.html
 
-`[19]` https://blog.heroku.com/applying-seccomp-filters-on-go-binaries
+* https://blog.cloudflare.com/sandboxing-in-linux-with-zero-lines-of-code/
 
-`[20]` https://packages.ubuntu.com/focal/libseccomp-dev
-
-`[21]`https://archive.fosdem.org/2020/schedule/event/debugging_strace_modern/attachments/slides/4109/export/events/attachments/debugging_strace_modern/slides/4109/fosdem_2020_slides_postmodern_strace.pdf
-
-`[22]` https://arxiv.org/pdf/2012.02554.pdf
-
-`[23]` https://github.com/IAIK/Chestnut
-
-`[24]`https://gist.github.com/chrisdlangton/f94fd36028a0ba46b73e6629524d5710
-
-`[25]`https://firejail.wordpress.com/documentation-2/seccomp-guide/
-
-`[26]`https://adil.medium.com/allow-disallow-syscalls-via-seccomp-d5fc8816d34e
-
-`[27]` https://www.brendangregg.com/blog/2014-05-11/strace-wow-much-syscall.html
-
-`[28]`https://blog.cloudflare.com/sandboxing-in-linux-with-zero-lines-of-code/
-
-`[29]`https://kubernetes.io/docs/tutorials/security/seccomp/
-
+* https://kubernetes.io/docs/tutorials/security/seccomp/
