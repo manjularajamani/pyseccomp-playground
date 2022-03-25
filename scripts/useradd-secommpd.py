@@ -1,8 +1,10 @@
-#--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-#https://gist.githubusercontent.com/Micro-Biology/ba343ba7d8763d34eec80a16b66b12c4/raw/f115715dfff2f4483f6c441edeab16f5379f7ac7/addME.py
-
-#I have modified the above script to use the subprocess and libseccomp libraries and added seccomp filters to restrict syscalls to only those which are necessary for the time the program is run.
-#--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+#-----------------------------------------------------------------------------
+# https://gist.github.com/Micro-Biology/ba343ba7d8763d34eec80a16b66b12c4
+#
+# I have modified the above script to use the subprocess and libseccomp
+# libraries and added seccomp filters to restrict syscalls to only those which
+# are necessary for the time the program is run.
+#-----------------------------------------------------------------------------
 
 
 #!/usr/bin/env python3
