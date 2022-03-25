@@ -1,3 +1,10 @@
+#--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+#https://gist.githubusercontent.com/Micro-Biology/ba343ba7d8763d34eec80a16b66b12c4/raw/f115715dfff2f4483f6c441edeab16f5379f7ac7/addME.py
+
+#I have modified the above script to use the subprocess and libseccomp libraries and added seccomp filters to restrict syscalls to only those which are necessary for the time the program is run.
+#--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
 #!/usr/bin/env python3
 
 
@@ -6,12 +13,20 @@ import getpass
 import re
 import pwd
 import subprocess
+
+# Python bindings for the libseccomp library
 from seccomp import *
 
 
 def setup_seccomp():
+
+    # create a filter object with a default KILL action
     f = SyscallFilter(defaction=KILL)
+
+    '''Arguments:
+        defaction - the default filter action'''
     
+    # add syscall filter rules to allow certain syscalls
     f.add_rule(ALLOW, "execve")
     f.add_rule(ALLOW, "mmap")
     f.add_rule(ALLOW, "access")
@@ -53,6 +68,8 @@ def setup_seccomp():
     f.add_rule(ALLOW, "clone")
     f.add_rule(ALLOW, "sigaltstack")
     f.add_rule(ALLOW, "exit_group")
+
+    # load the filter into the kernel
     f.load()
     print(f'Seccomp enabled...')
 
